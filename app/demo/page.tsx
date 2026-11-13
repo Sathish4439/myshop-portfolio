@@ -428,6 +428,28 @@ export default function DemoPage() {
                     <span>Browser Print</span>
                   </button>
                 </div>
+
+                {/* High-Converting Download Card */}
+                <div className="mt-4 p-4 rounded-2xl bg-gradient-to-br from-emerald-950 to-slate-900 border border-emerald-500/40 text-white font-sans text-center space-y-2.5">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-wider">
+                    <Sparkles className="w-3 h-3" /> Ready for your shop counter
+                  </div>
+                  <h4 className="text-sm font-black text-white">
+                    Start Billing with Your Phone Today!
+                  </h4>
+                  <p className="text-[11px] text-slate-300 font-medium leading-relaxed">
+                    100% Free on Android. Zero computer cost, works 100% offline with Bluetooth receipt printers.
+                  </p>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 transition-all hover:scale-[1.02]"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span>Download Free on Google Play</span>
+                  </a>
+                </div>
               </div>
             )}
 
@@ -467,13 +489,22 @@ export default function DemoPage() {
                 </p>
               </div>
 
-              <div className="pt-2 flex justify-end">
+              <div className="pt-2 flex items-center justify-between gap-3">
                 <button
                   onClick={() => setShowWhatsAppModal(false)}
-                  className="px-5 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs"
+                  className="px-4 py-2.5 rounded-xl text-slate-500 hover:text-slate-800 font-bold text-xs"
                 >
-                  Done
+                  Close
                 </button>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs flex items-center gap-1.5 shadow-md shadow-emerald-600/30"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Get App for Store</span>
+                </a>
               </div>
             </div>
           </div>

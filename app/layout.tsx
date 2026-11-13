@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MobileStickyInstallBar from "@/components/MobileStickyInstallBar";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -131,6 +132,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@500;600;700;800&family=Noto+Sans+Kannada:wght@500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-play-app" content="app-id=com.sathishdev.myshop" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
@@ -142,8 +144,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col justify-between antialiased selection:bg-emerald-500 selection:text-white">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-16 md:pb-0">{children}</main>
         <Footer />
+        <MobileStickyInstallBar />
       </body>
     </html>
   );
