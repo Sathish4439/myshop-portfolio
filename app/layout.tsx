@@ -90,9 +90,14 @@ export default function RootLayout({
     "installUrl": "https://play.google.com/store/apps/details?id=com.sathishdev.myshop",
     "image": "https://myshop.sathishdev.in/images/app-logo.png",
     "author": {
-      "@type": "Organization",
-      "name": "MyShop",
-      "url": "https://myshop.sathishdev.in",
+      "@type": "Person",
+      "name": "Sathish G",
+      "url": "https://www.sathishdev.in",
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Sathish G",
+      "url": "https://www.sathishdev.in",
     },
   };
 
@@ -103,6 +108,8 @@ export default function RootLayout({
     "url": "https://myshop.sathishdev.in",
     "logo": "https://myshop.sathishdev.in/images/app-logo.png",
     "sameAs": [
+      "https://www.sathishdev.in/work/myshop-pos",
+      "https://www.sathishdev.in",
       "https://play.google.com/store/apps/details?id=com.sathishdev.myshop",
       "https://www.instagram.com/myshop.billing/",
     ],

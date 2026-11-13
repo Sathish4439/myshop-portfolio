@@ -79,8 +79,30 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <div>
-            © {new Date().getFullYear()} MyShop. All rights reserved. Built for retail store owners.
+          <div className="space-y-1">
+            <div>
+              © {new Date().getFullYear()} MyShop. All rights reserved. Built for retail store owners.
+            </div>
+            <div>
+              Engineered by{" "}
+              <a
+                href="https://www.sathishdev.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-emerald-400 font-semibold underline decoration-slate-700 transition-colors"
+              >
+                Sathish G
+              </a>{" "}
+              •{" "}
+              <a
+                href="https://www.sathishdev.in/work/myshop-pos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-emerald-400 font-semibold underline decoration-slate-700 transition-colors"
+              >
+                Full Architecture Case Study
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <span>Made with</span>
