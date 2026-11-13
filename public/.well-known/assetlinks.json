@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sathishdev.myshop",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:7D:0F:52:CC:71:85:46:7F:6E:7B:6A:B2:D6:7A:B4:8A:2C:12:44:56:88:5A:9B:1B:3E:45:67:89:AB"
+      ]
+    }
+  }
+]
+
