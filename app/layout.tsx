@@ -61,6 +61,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://myshop.sathishdev.in",
   },
+  verification: {
+    google: "google9c6a341969d73685",
+  },
 };
 
 export default function RootLayout({
