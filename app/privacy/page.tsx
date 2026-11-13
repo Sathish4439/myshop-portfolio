@@ -24,21 +24,21 @@ export default function PrivacyPage() {
         </div>
 
         {/* Header */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-sm mb-8">
+        <div className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200/80 shadow-sm mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 font-extrabold text-xs uppercase tracking-wider mb-4">
             <ShieldCheck className="w-4 h-4 text-emerald-700" />
             Google Play Verified Compliance
           </div>
-          <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Privacy Policy for MyShop POS
           </h1>
-          <p className="text-sm font-semibold text-slate-500 mt-2">
+          <p className="text-xs sm:text-sm font-semibold text-slate-500 mt-2 break-all">
             Last updated: November 13, 2026 • Applies to Application Package: <code className="bg-slate-100 text-slate-800 px-2 py-0.5 rounded font-mono text-xs">com.sathishdev.myshop</code>
           </p>
         </div>
 
         {/* Content Body */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-sm space-y-8 text-slate-700 text-sm sm:text-base leading-relaxed">
+        <div className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200/80 shadow-sm space-y-8 text-slate-700 text-sm sm:text-base leading-relaxed">
           
           <section className="space-y-3">
             <h2 className="text-xl font-black text-slate-900">1. Overview & Commitment to Merchant Privacy</h2>

@@ -14,42 +14,42 @@ export default function HomePage() {
       <Hero />
 
       {/* 2. Trust & Social Proof Bar */}
-      <section className="bg-slate-900 border-y border-slate-800 py-8 text-white">
+      <section className="bg-slate-900 border-y border-slate-800 py-6 sm:py-8 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
             <div className="space-y-1">
-              <div className="text-3xl sm:text-4xl font-black text-emerald-400">100%</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
+              <div className="text-2xl sm:text-4xl font-black text-emerald-400">100%</div>
+              <div className="text-[11px] sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
                 Offline Resilience
               </div>
-              <div className="text-[11px] text-slate-500 font-medium">No Wi-Fi or data required</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">No Wi-Fi or data required</div>
             </div>
 
             <div className="space-y-1">
-              <div className="text-3xl sm:text-4xl font-black text-emerald-400">₹0</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
+              <div className="text-2xl sm:text-4xl font-black text-emerald-400">₹0</div>
+              <div className="text-[11px] sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
                 Hardware Investment
               </div>
-              <div className="text-[11px] text-slate-500 font-medium">Use any Android phone</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">Use any Android phone</div>
             </div>
 
             <div className="space-y-1">
-              <div className="text-3xl sm:text-4xl font-black text-emerald-400">3 Sec</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
+              <div className="text-2xl sm:text-4xl font-black text-emerald-400">3 Sec</div>
+              <div className="text-[11px] sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
                 Fast Checkout
               </div>
-              <div className="text-[11px] text-slate-500 font-medium">Peak rush crowd handler</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">Peak rush crowd handler</div>
             </div>
 
             <div className="space-y-1">
-              <div className="text-3xl sm:text-4xl font-black text-emerald-400 flex items-center justify-center gap-1">
+              <div className="text-2xl sm:text-4xl font-black text-emerald-400 flex items-center justify-center gap-1">
                 <span>4.8</span>
-                <Star className="w-5 h-5 fill-amber-400 text-amber-400 inline" />
+                <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400 text-amber-400 inline" />
               </div>
-              <div className="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
+              <div className="text-[11px] sm:text-sm font-bold text-slate-300 uppercase tracking-wider">
                 Merchant Rating
               </div>
-              <div className="text-[11px] text-slate-500 font-medium">Verified grocery owners</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">Verified grocery owners</div>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 font-extrabold text-xs uppercase tracking-wider">
                 <Sparkles className="w-4 h-4" /> Ready for your store today
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
                 Stop Writing Paper Bills. <br />
                 <span className="text-emerald-400">Start Billing on Your Phone in 2 Minutes!</span>
               </h2>

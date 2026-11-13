@@ -13,15 +13,15 @@ export default function Hero() {
           <div className="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
             
             {/* Trust Pill */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 font-extrabold text-xs sm:text-sm uppercase tracking-wider mb-6 w-max mx-auto lg:mx-0 shadow-sm">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              100% OFFLINE GROCERY BILLING & POS
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 font-extrabold text-[11px] sm:text-sm uppercase tracking-wider mb-6 max-w-full mx-auto lg:mx-0 shadow-sm text-center">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+              <span>100% OFFLINE GROCERY BILLING &amp; POS</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.18] sm:leading-[1.15]">
               Turn Your Android Phone into a Smart{" "}
-              <span className="text-emerald-700 italic relative whitespace-nowrap">
+              <span className="text-emerald-700 italic relative inline-block">
                 Billing Machine!
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-emerald-500" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
                   <path d="M2 9C50 3 150 3 198 9" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
@@ -30,7 +30,7 @@ export default function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-slate-600 font-medium mt-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-xl text-slate-600 font-medium mt-4 sm:mt-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Why spend ₹25,000 on bulky computers? MyShop gives independent grocery, kirana, and provision stores a lightning-fast 3-second billing POS, camera barcode scanner, Bluetooth receipts, and WhatsApp khata reminders.
             </p>
 
@@ -102,13 +102,13 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Hero 3D Phone Mockup with Badges */}
-          <div className="lg:col-span-5 relative flex items-center justify-center">
+          <div className="lg:col-span-5 relative flex items-center justify-center w-full px-4 sm:px-0">
             
             {/* Ambient Behind-Phone Glow */}
-            <div className="w-[380px] h-[380px] rounded-full bg-gradient-to-br from-emerald-400/25 to-teal-400/20 blur-3xl absolute pointer-events-none"></div>
+            <div className="w-64 h-64 sm:w-[380px] sm:h-[380px] rounded-full bg-gradient-to-br from-emerald-400/25 to-teal-400/20 blur-3xl absolute pointer-events-none"></div>
 
             {/* Flagship Phone Container */}
-            <div className="relative w-[320px] sm:w-[350px] drop-shadow-[0_25px_50px_rgba(0,108,73,0.22)] transform rotate-1 transition-transform hover:rotate-0 duration-300">
+            <div className="relative w-full max-w-[260px] sm:max-w-[340px] drop-shadow-[0_25px_50px_rgba(0,108,73,0.22)] transform sm:rotate-1 transition-transform hover:rotate-0 duration-300">
               <Image
                 src="/images/screen-pos-billing.png"
                 alt="MyShop POS Quick Billing Screen"

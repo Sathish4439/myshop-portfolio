@@ -10,15 +10,22 @@
   --navy-dark: #060a14;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background-color: #fafafa;
   color: #0f172a;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  overflow-x: hidden;
 }
 
 /* Glassmorphism */

@@ -76,24 +76,24 @@ export default function FeaturesGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 font-extrabold text-xs uppercase tracking-wider mb-4 border border-emerald-300">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 font-extrabold text-[11px] sm:text-xs uppercase tracking-wider mb-4 border border-emerald-300">
             ENGINEERED FOR RETAIL EFFICIENCY
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Everything Your Grocery Shop Needs to Run Smarter
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 font-medium mt-4">
+          <p className="text-sm sm:text-lg text-slate-600 font-medium mt-3 sm:mt-4">
             Designed specifically for independent Indian grocery, kirana, provision, and supermarket counters. No computer knowledge required.
           </p>
         </div>
 
         {/* 6 Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feat, idx) => (
             <div
               key={idx}
-              className={`rounded-3xl p-7 border-2 ${feat.accent} transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between`}
+              className={`rounded-3xl p-5 sm:p-7 border-2 ${feat.accent} transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

@@ -13,8 +13,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-12 h-12 rounded-2xl bg-white p-1.5 shadow-md shadow-slate-200 border border-slate-100 flex items-center justify-center transition-transform group-hover:scale-105">
+        <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white p-1.5 shadow-md shadow-slate-200 border border-slate-100 flex items-center justify-center transition-transform group-hover:scale-105 shrink-0">
             <Image
               src="/images/app-logo.png"
               alt="MyShop Logo"
@@ -24,14 +24,14 @@ export default function Navbar() {
               priority
             />
           </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-black tracking-tight text-slate-900">MyShop</span>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300">
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900">MyShop</span>
+              <span className="px-1.5 sm:px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300">
                 POS
               </span>
             </div>
-            <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+            <p className="text-[10px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-wider truncate">
               100% Offline Android Billing
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100"
+          className="md:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

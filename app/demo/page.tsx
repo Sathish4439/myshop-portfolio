@@ -219,7 +219,7 @@ export default function DemoPage() {
                           : "border-slate-200 hover:border-emerald-300 hover:bg-slate-50"
                       }`}
                     >
-                      <div className="space-y-0.5 max-w-[190px]">
+                      <div className="space-y-0.5 min-w-0 flex-1 pr-2">
                         <p className="text-xs font-black text-slate-900 leading-snug line-clamp-1">{prod.name}</p>
                         <p className="text-[11px] font-bold text-emerald-700">{prod.tamilName}</p>
                         <p className="text-[10px] text-slate-400 font-mono">Barcode: {prod.barcode}</p>

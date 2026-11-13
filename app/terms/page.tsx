@@ -24,21 +24,21 @@ export default function TermsPage() {
         </div>
 
         {/* Header */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-sm mb-8">
+        <div className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200/80 shadow-sm mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 border border-slate-300 font-extrabold text-xs uppercase tracking-wider mb-4">
             <FileText className="w-4 h-4 text-slate-700" />
             Merchant Agreement
           </div>
-          <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Terms of Service
           </h1>
-          <p className="text-sm font-semibold text-slate-500 mt-2">
+          <p className="text-xs sm:text-sm font-semibold text-slate-500 mt-2 break-all">
             Effective Date: November 13, 2026 • Application: MyShop (com.sathishdev.myshop)
           </p>
         </div>
 
         {/* Content Body */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-sm space-y-8 text-slate-700 text-sm sm:text-base leading-relaxed">
+        <div className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200/80 shadow-sm space-y-8 text-slate-700 text-sm sm:text-base leading-relaxed">
           
           <section className="space-y-3">
             <h2 className="text-xl font-black text-slate-900">1. Acceptance of Terms</h2>

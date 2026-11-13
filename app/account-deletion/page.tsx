@@ -33,15 +33,15 @@ export default function AccountDeletionPage() {
         </div>
 
         {/* Header */}
-        <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-sm mb-8">
+        <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-sm mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-red-800 border border-red-200 font-extrabold text-xs uppercase tracking-wider mb-4">
             <Trash2 className="w-4 h-4 text-red-700" />
             Google Play Data Compliance
           </div>
-          <h1 className="text-3xl font-black text-slate-900 tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
             MyShop Account & Data Deletion Request
           </h1>
-          <p className="text-sm font-semibold text-slate-500 mt-2">
+          <p className="text-xs sm:text-sm font-semibold text-slate-500 mt-2 break-all">
             Application Package: <code className="bg-slate-100 text-slate-800 px-2 py-0.5 rounded font-mono text-xs">com.sathishdev.myshop</code>
           </p>
         </div>

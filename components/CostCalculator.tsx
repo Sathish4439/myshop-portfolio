@@ -69,9 +69,72 @@ export default function CostCalculator() {
           </p>
         </div>
 
-        {/* Comparison Table */}
-        <div className="overflow-x-auto rounded-3xl border border-slate-700 bg-slate-800/80 backdrop-blur-md shadow-2xl">
-          <table className="w-full text-left border-collapse">
+        {/* Mobile View: High-Impact Comparison Cards */}
+        <div className="block md:hidden space-y-4">
+          {comparisonRows.map((row, idx) => (
+            <div
+              key={idx}
+              className={`rounded-2xl p-5 border ${
+                row.highlight
+                  ? "bg-emerald-950/30 border-emerald-500/50"
+                  : "bg-slate-800/80 border-slate-700"
+              }`}
+            >
+              <div className="text-sm font-black text-white mb-3 flex items-center justify-between">
+                <span>{row.item}</span>
+                {row.highlight && (
+                  <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase bg-emerald-500 text-slate-950">
+                    Big Saver
+                  </span>
+                )}
+              </div>
+
+              <div className="grid grid-cols-2 gap-2 text-xs mb-3 pb-3 border-b border-slate-700/80">
+                <div className="bg-slate-900/60 p-2.5 rounded-xl border border-slate-700/50">
+                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Traditional POS</span>
+                  <span className="text-rose-400 font-extrabold line-through block mt-0.5">{row.traditional}</span>
+                </div>
+                <div className="bg-slate-900/60 p-2.5 rounded-xl border border-slate-700/50">
+                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Other Apps</span>
+                  <span className="text-amber-400 font-extrabold line-through block mt-0.5">{row.vyapar}</span>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between bg-emerald-900/40 p-3 rounded-xl border border-emerald-500/40">
+                <span className="text-xs font-black text-emerald-300">MyShop Android POS:</span>
+                <span className="text-xs font-black text-emerald-300 flex items-center gap-1">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+                  {row.myshop}
+                </span>
+              </div>
+            </div>
+          ))}
+
+          {/* Mobile Grand Total Summary Card */}
+          <div className="rounded-2xl p-6 bg-gradient-to-br from-emerald-900 to-slate-950 border-2 border-emerald-500 shadow-xl text-center space-y-3">
+            <div className="text-xs font-black uppercase tracking-wider text-emerald-300">
+              Total 1st-Year Out-of-Pocket Cost
+            </div>
+            <div className="flex items-center justify-around py-2 border-y border-emerald-500/30 text-xs">
+              <div>
+                <span className="text-slate-400 block text-[10px]">Traditional POS</span>
+                <span className="text-rose-400 font-extrabold text-sm line-through">₹36,000+</span>
+              </div>
+              <div className="text-slate-600">vs</div>
+              <div>
+                <span className="text-emerald-400 block text-[10px] font-bold">MyShop POS</span>
+                <span className="text-2xl font-black text-emerald-400">₹0 FREE</span>
+              </div>
+            </div>
+            <p className="text-[11px] text-slate-300 font-medium">
+              Save ₹34,000+ with zero hardware investment &amp; zero renewal fees.
+            </p>
+          </div>
+        </div>
+
+        {/* Desktop Comparison Table (Hidden on Mobile) */}
+        <div className="hidden md:block overflow-x-auto rounded-3xl border border-slate-700 bg-slate-800/80 backdrop-blur-md shadow-2xl">
+          <table className="w-full min-w-[640px] text-left border-collapse">
             <thead>
               <tr className="border-b border-slate-700 bg-slate-950/60 text-xs sm:text-sm font-extrabold text-slate-400 uppercase tracking-wider">
                 <th className="p-4 sm:p-6">Expense Item</th>

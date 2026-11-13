@@ -138,11 +138,11 @@ export default function HardwarePage() {
         </div>
 
         {/* Printers Comparison Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
           {printers.map((p, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-md hover:shadow-xl transition-all flex flex-col justify-between"
+              className="bg-white rounded-3xl p-5 sm:p-8 border border-slate-200/80 shadow-md hover:shadow-xl transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-start justify-between gap-4">
@@ -196,7 +196,7 @@ export default function HardwarePage() {
         </div>
 
         {/* 58mm vs 80mm Comparison Guide */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-md mb-20">
+        <div className="bg-white rounded-3xl p-5 sm:p-12 border border-slate-200 shadow-md mb-16 sm:mb-20">
           <div className="max-w-3xl mb-8">
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
               58mm vs 80mm: Which Paper Width Should You Buy?

@@ -17,8 +17,8 @@ export default function PrinterSpotlight() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Real Thermal Receipt Image */}
-          <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-[300px] drop-shadow-[0_20px_40px_rgba(0,108,73,0.25)] transform -rotate-1">
+          <div className="lg:col-span-5 flex justify-center w-full px-4 sm:px-0">
+            <div className="relative w-full max-w-[240px] sm:max-w-[290px] drop-shadow-[0_20px_40px_rgba(0,108,73,0.25)] transform sm:-rotate-1">
               <Image
                 src="/images/screen-receipt.png"
                 alt="MyShop Thermal Receipt Preview"
@@ -26,7 +26,7 @@ export default function PrinterSpotlight() {
                 height={1500}
                 className="w-full h-auto object-contain block"
               />
-              <div className="absolute -bottom-4 bg-emerald-800 text-white px-5 py-2.5 rounded-full shadow-lg text-xs font-black flex items-center gap-2">
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 bg-emerald-800 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-lg text-xs font-black flex items-center gap-2 whitespace-nowrap">
                 <Printer className="w-4 h-4 text-emerald-300" />
                 <span>Live 80mm Receipt Roll</span>
               </div>
@@ -35,12 +35,12 @@ export default function PrinterSpotlight() {
 
           {/* Right Column: Printer Compatibility & Features */}
           <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 font-extrabold text-xs uppercase tracking-wider mb-4 border border-emerald-300">
-              <Bluetooth className="w-4 h-4 text-emerald-700" />
-              UNIVERSAL BLUETOOTH PRINTER SUPPORT
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 font-extrabold text-[11px] sm:text-xs uppercase tracking-wider mb-4 border border-emerald-300">
+              <Bluetooth className="w-4 h-4 text-emerald-700 shrink-0" />
+              <span>UNIVERSAL BLUETOOTH PRINTER SUPPORT</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
               Pair Any Standard 58mm or 80mm Thermal Printer in 1 Minute
             </h2>
 
