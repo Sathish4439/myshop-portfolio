@@ -128,10 +128,11 @@ export default function PrivacyPage() {
           <section className="space-y-3">
             <h2 className="text-xl font-black text-slate-900">6. Contact Information</h2>
             <p>If you have any questions or security concerns regarding this Privacy Policy, please contact our Data Protection Officer:</p>
-            <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm font-semibold text-emerald-950">
-              <p>MyShop POS Engineering & Privacy Desk</p>
-              <p>Email: <a href="mailto:support@myshop.sathishdev.in" className="underline">support@myshop.sathishdev.in</a></p>
-              <p>Website: <a href="https://myshop.sathishdev.in" className="underline">https://myshop.sathishdev.in</a></p>
+            <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm font-semibold text-emerald-950 space-y-1">
+              <p className="font-extrabold text-slate-900">MyShop POS Engineering & Privacy Desk</p>
+              <p>Email: <a href="mailto:sathishg.dev@gmail.com" className="underline text-emerald-800">sathishg.dev@gmail.com</a></p>
+              <p>Phone: <a href="tel:+919488250293" className="underline text-emerald-800 font-mono">+91 94882 50293</a></p>
+              <p>Website: <a href="https://myshop.sathishdev.in" className="underline text-emerald-800">https://myshop.sathishdev.in</a></p>
               <p>Location: Bangalore, Karnataka, India</p>
             </div>
           </section>

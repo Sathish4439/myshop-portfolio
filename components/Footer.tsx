@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Download, Instagram, ShieldCheck, Heart } from "lucide-react";
+import { Download, Instagram, ShieldCheck, Heart, Phone, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -27,7 +27,43 @@ export default function Footer() {
             <p className="text-sm font-medium text-slate-400 max-w-sm leading-relaxed">
               The 100% offline grocery billing & mobile POS app designed for independent Indian grocers, kiranas, and provision stores. Turn your smartphone into a billing machine.
             </p>
-            <div className="pt-2">
+
+            {/* Direct Support Desk Card */}
+            <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800 space-y-2.5 max-w-sm">
+              <span className="text-xs font-black uppercase text-white tracking-wider block">
+                Direct Merchant Assistance Desk
+              </span>
+              <div className="space-y-1.5 text-xs">
+                <a
+                  href="tel:+919488250293"
+                  className="flex items-center gap-2 text-slate-300 hover:text-emerald-400 font-semibold transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <span>Call: <strong className="text-white font-mono">+91 94882 50293</strong></span>
+                </a>
+                <a
+                  href="mailto:sathishg.dev@gmail.com"
+                  className="flex items-center gap-2 text-slate-300 hover:text-emerald-400 font-semibold transition-colors"
+                >
+                  <Mail className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <span>sathishg.dev@gmail.com</span>
+                </a>
+                <a
+                  href="https://wa.me/919488250293?text=Hi%20MyShop%20Team%2C%20I%20need%20help%20with%20my%20grocery%20billing%20app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-slate-300 hover:text-emerald-400 font-semibold transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-green-400 shrink-0" />
+                  <span>WhatsApp Chat (Instant Reply)</span>
+                </a>
+              </div>
+              <p className="text-[10px] text-slate-500 font-medium pt-1 border-t border-slate-800">
+                Operational Support: Mon–Sat 9:00 AM – 9:00 PM IST
+              </p>
+            </div>
+
+            <div className="pt-1">
               <a
                 href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop"
                 target="_blank"
@@ -95,19 +131,22 @@ export default function Footer() {
               </a>{" "}
               •{" "}
               <a
-                href="https://www.sathishdev.in/work/myshop-pos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-emerald-400 font-semibold underline decoration-slate-700 transition-colors"
+                href="mailto:sathishg.dev@gmail.com"
+                className="text-slate-400 hover:text-emerald-400 underline decoration-slate-700 transition-colors"
               >
-                Full Architecture Case Study
+                sathishg.dev@gmail.com
               </a>
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <span>Made with</span>
-            <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-            <span>for Indian Grocery & Kirana Stores</span>
+
+          <div className="flex items-center gap-4 text-slate-400">
+            <a href="tel:+919488250293" className="hover:text-emerald-400 transition-colors font-mono">
+              +91 94882 50293
+            </a>
+            <span>•</span>
+            <span className="flex items-center gap-1 text-slate-400">
+              Made with <Heart className="w-3.5 h-3.5 text-red-500 inline fill-red-500" /> in India
+            </span>
           </div>
         </div>
 
@@ -115,4 +154,3 @@ export default function Footer() {
     </footer>
   );
 }
-

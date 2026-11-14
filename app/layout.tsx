@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MobileStickyInstallBar from "@/components/MobileStickyInstallBar";
+import FloatingSupportWidget from "@/components/FloatingSupportWidget";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -147,6 +148,7 @@ export default function RootLayout({
         <main className="flex-1 pb-16 md:pb-0">{children}</main>
         <Footer />
         <MobileStickyInstallBar />
+        <FloatingSupportWidget />
       </body>
     </html>
   );

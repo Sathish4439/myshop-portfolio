@@ -96,8 +96,12 @@ export default function TermsPage() {
             <h2 className="text-xl font-black text-slate-900">7. Support Inquiries</h2>
             <p>
               For questions regarding these terms or technical support for MyShop, email our team at:{" "}
-              <a href="mailto:support@myshop.sathishdev.in" className="text-emerald-700 font-bold underline">
-                support@myshop.sathishdev.in
+              <a href="mailto:sathishg.dev@gmail.com" className="text-emerald-700 font-bold underline">
+                sathishg.dev@gmail.com
+              </a>{" "}
+              or call our developer support desk directly at{" "}
+              <a href="tel:+919488250293" className="text-emerald-700 font-bold underline font-mono">
+                +91 94882 50293
               </a>.
             </p>
           </section>

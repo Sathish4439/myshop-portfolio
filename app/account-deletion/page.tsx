@@ -177,8 +177,12 @@ export default function AccountDeletionPage() {
 
               <p className="text-[11px] text-slate-400 text-center font-medium">
                 For questions regarding data privacy compliance, reach us at{" "}
-                <a href="mailto:support@myshop.sathishdev.in" className="text-emerald-700 font-bold underline">
-                  support@myshop.sathishdev.in
+                <a href="mailto:sathishg.dev@gmail.com" className="text-emerald-700 font-bold underline">
+                  sathishg.dev@gmail.com
+                </a>{" "}
+                or call{" "}
+                <a href="tel:+919488250293" className="text-emerald-700 font-bold underline font-mono">
+                  +91 94882 50293
                 </a>
               </p>
             </form>
