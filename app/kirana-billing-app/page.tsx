@@ -17,35 +17,36 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Free Kirana Billing App for Android — MyShop POS | 100% Offline",
+  title: "Free Maligai Kadai & Kirana Billing App for Android — MyShop POS | 100% Offline",
   description:
-    "Best free kirana billing app for Android. 100% offline POS, camera barcode scanner, Bluetooth thermal printer support, digital khata & WhatsApp reminders. No subscription. Download free from Google Play.",
+    "Best free maligai kadai & kirana billing app for Android. 100% offline POS, phone camera barcode scanner, Bluetooth thermal printer support, digital khata & WhatsApp reminders. No subscription. Free on Google Play.",
   keywords: [
+    "maligai kadai billing app",
     "kirana billing app free",
     "kirana billing app android",
-    "free kirana pos software",
+    "free maligai pos software",
     "kirana billing software offline",
-    "grocery billing app india",
+    "grocery billing app tamil nadu",
     "kirana shop billing app",
-    "free billing software kirana store",
+    "free billing software maligai store",
     "offline kirana billing android",
-    "maligai kadai billing app",
     "provision store billing app",
+    "shop billing software tamil"
   ],
   alternates: {
     canonical: "https://myshop.sathishdev.in/kirana-billing-app",
   },
   openGraph: {
-    title: "Free Kirana Billing App for Android — MyShop POS",
+    title: "Free Maligai Kadai & Kirana Billing App for Android — MyShop POS",
     description:
-      "Turn your Android phone into a kirana billing machine. 100% offline, camera barcode scanning, Bluetooth receipts, digital khata. Zero subscription. Free forever.",
+      "Turn your Android phone into a maligai kadai & kirana billing machine. 100% offline, camera barcode scanning, Bluetooth receipts, digital khata. Zero subscription. Free forever.",
     url: "https://myshop.sathishdev.in/kirana-billing-app",
     images: [
       {
         url: "https://myshop.sathishdev.in/images/screen-pos-billing.png",
         width: 700,
         height: 1500,
-        alt: "MyShop Kirana Billing App POS Screen",
+        alt: "MyShop Maligai Kadai & Kirana Billing App POS Screen",
       },
     ],
   },
@@ -179,26 +180,25 @@ export default function KiranaBillingAppPage() {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 font-extrabold text-xs uppercase tracking-wider mb-5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Free Kirana Billing App for Android
+                  Free Maligai Kadai &amp; Kirana Billing App
                 </div>
 
                 <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
                   Best Free{" "}
-                  <span className="text-emerald-700">Kirana Billing App</span>{" "}
+                  <span className="text-emerald-700">Maligai Kadai &amp; Kirana Billing App</span>{" "}
                   for Android — 100% Offline
                 </h1>
 
                 <p className="text-base sm:text-xl text-slate-600 font-medium mt-5 leading-relaxed">
-                  MyShop turns your Android phone into a complete kirana billing
-                  machine. Bill customers in 3 seconds, scan barcodes with your
-                  camera, print Bluetooth receipts, and track customer credit —
-                  all without internet. <strong>Completely free. No subscription.</strong>
+                  MyShop turns your Android phone into a complete grocery billing machine.
+                  Designed for independent <strong>மளிகை கடை (Maligai Kadai)</strong>, kirana, and provision stores.
+                  Bill customers in 3 seconds, scan barcodes with your camera, print Bluetooth receipts,
+                  and track customer udhaar — all without internet. <strong>Completely free. No subscription.</strong>
                 </p>
 
                 {/* Tamil subtitle */}
-                <p className="tamil text-sm font-bold text-emerald-700 mt-3">
-                  உங்கள் கிரானா கடைக்கு சிறந்த இலவச பில்லிங் ஆப்!
-                  இண்டர்நெட் இல்லாமலும் வேலை செய்யும்.
+                <p className="tamil text-base font-bold text-emerald-800 mt-3 p-3 bg-emerald-50 rounded-xl border border-emerald-200">
+                  🛒 உங்கள் மளிகை கடை &amp; கிரானா ஸ்டோருக்கு சிறந்த இலவச பில்லிங் ஆப்! இண்டர்நெட் இல்லாமலும் பில் போடலாம்.
                 </p>
 
                 <div className="mt-7 flex flex-col sm:flex-row gap-4">

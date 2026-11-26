@@ -73,8 +73,8 @@ export default function Navbar() {
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-7 text-sm font-bold text-slate-600">
-            <Link href="/kirana-billing-app" className="hover:text-emerald-700 transition-colors text-emerald-800 font-extrabold">
-              Kirana App
+            <Link href="/kirana-billing-app" className="hover:text-emerald-700 transition-colors text-emerald-800 font-extrabold flex items-center gap-1">
+              <span>மளிகை &amp; Kirana</span>
             </Link>
             <Link href="/#features" className="hover:text-emerald-700 transition-colors">
               Features
@@ -123,6 +123,14 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div className="md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200 shadow-xl space-y-4">
             <nav className="flex flex-col space-y-3 font-bold text-slate-700">
+              <Link
+                href="/kirana-billing-app"
+                onClick={() => setMobileMenuOpen(false)}
+                className="px-3 py-2 rounded-lg bg-emerald-50 text-emerald-800 font-extrabold flex items-center justify-between"
+              >
+                <span>மளிகை &amp; Kirana App</span>
+                <span className="text-[10px] bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded-full font-black">100% Free</span>
+              </Link>
               <Link
                 href="/#features"
                 onClick={() => setMobileMenuOpen(false)}

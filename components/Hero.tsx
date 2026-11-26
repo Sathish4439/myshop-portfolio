@@ -15,7 +15,7 @@ export default function Hero() {
             {/* Trust Pill */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 font-extrabold text-[11px] sm:text-sm uppercase tracking-wider mb-6 max-w-full mx-auto lg:mx-0 shadow-sm text-center">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
-              <span>100% OFFLINE GROCERY BILLING &amp; POS</span>
+              <span>100% OFFLINE GROCERY &amp; MALIGAI KADAI POS</span>
             </div>
 
             {/* Main Headline */}
@@ -31,7 +31,7 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-base sm:text-xl text-slate-600 font-medium mt-4 sm:mt-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Why spend ₹25,000 on bulky computers? MyShop gives independent grocery, kirana, and provision stores a lightning-fast 3-second billing POS, camera barcode scanner, Bluetooth receipts, and WhatsApp khata reminders.
+              Why spend ₹25,000 on bulky computers? MyShop gives independent grocery, maligai kadai (மளிகை கடை), kirana, and provision stores a lightning-fast 3-second billing POS, camera barcode scanner, Bluetooth receipts, and WhatsApp khata reminders.
             </p>
 
             {/* Action Buttons & Desktop QR Code */}
