@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://myshop.sathishdev.in/terms",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function TermsPage() {

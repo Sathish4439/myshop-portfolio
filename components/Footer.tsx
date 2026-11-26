@@ -80,9 +80,10 @@ export default function Footer() {
           <div className="space-y-3">
             <div className="text-xs font-black uppercase text-white tracking-wider">Product</div>
             <ul className="space-y-2 text-sm font-medium">
+              <li><Link href="/kirana-billing-app" className="text-emerald-400 font-bold hover:underline transition-colors">Kirana Billing App ★</Link></li>
               <li><Link href="/#features" className="hover:text-emerald-400 transition-colors">POS Quick Billing</Link></li>
               <li><Link href="/#features" className="hover:text-emerald-400 transition-colors">Camera Barcode</Link></li>
-              <li><Link href="/#features" className="hover:text-emerald-400 transition-colors">Thermal Receipts</Link></li>
+              <li><Link href="/hardware" className="hover:text-emerald-400 transition-colors">Thermal Receipts</Link></li>
               <li><Link href="/#features" className="hover:text-emerald-400 transition-colors">WhatsApp Khata</Link></li>
               <li><Link href="/#features" className="hover:text-emerald-400 transition-colors">Inventory Alerts</Link></li>
             </ul>

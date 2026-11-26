@@ -4,17 +4,19 @@ import Link from "next/link";
 import { Printer, Bluetooth, CheckCircle2, ShieldCheck, Download, Smartphone, HelpCircle, ArrowRight, Zap, RefreshCw } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Compatible Bluetooth Thermal Printers (58mm & 80mm) • MyShop POS",
+  title: "Best Bluetooth Thermal Printers for Kirana Billing — MyShop Hardware Guide",
   description:
-    "Official hardware compatibility guide for MyShop grocery billing app. Tested with TVS, Everycom, NGX, POSIFLEX, and HOIN 58mm & 80mm ESC/POS Bluetooth printers.",
+    "Complete compatibility guide for Bluetooth thermal printers with MyShop kirana billing app. Tested with TVS, Everycom, NGX, POSIFLEX, HOIN 58mm & 80mm ESC/POS printers. Step-by-step Android setup guide.",
   keywords: [
     "bluetooth thermal printer billing app",
     "58mm thermal printer grocery",
     "80mm pos receipt printer android",
+    "best bluetooth printer kirana shop india",
     "tvs rp 3150 bluetooth billing",
     "everycom ec 58 billing setup",
     "ngx bluetooth printer kirana",
-    "esc pos printer android setup"
+    "esc pos printer android setup",
+    "bluetooth printer billing android india"
   ],
   alternates: {
     canonical: "https://myshop.sathishdev.in/hardware",
@@ -22,6 +24,68 @@ export const metadata: Metadata = {
 };
 
 export default function HardwarePage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myshop.sathishdev.in",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bluetooth Printer Guide",
+        "item": "https://myshop.sathishdev.in/hardware",
+      },
+    ],
+  };
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Connect a Bluetooth Thermal Printer to MyShop Kirana Billing App",
+    "description": "Step-by-step guide to connect any 58mm or 80mm Bluetooth thermal printer to the MyShop Android grocery billing app.",
+    "totalTime": "PT3M",
+    "tool": [
+      {
+        "@type": "HowToTool",
+        "name": "Android smartphone with MyShop app installed"
+      },
+      {
+        "@type": "HowToTool",
+        "name": "58mm or 80mm Bluetooth thermal printer"
+      }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Power On Printer & Pair via Android",
+        "text": "Turn on your Bluetooth thermal printer. On your Android phone, go to Settings → Bluetooth, scan for devices, and pair with the printer (Default PIN is usually 0000 or 1234)."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Open MyShop Settings",
+        "text": "In MyShop app, tap Settings → Printer Configuration. Choose your paper width: 58mm (2-inch) or 80mm (3-inch)."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Select Paired Device & Test",
+        "text": "Select your paired printer name from the dropdown list. Tap 'Print Test Slip'. The printer will buzz and print a sample receipt in 1 second."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Enable Auto-Printing",
+        "text": "Turn on 'Auto-print receipt after checkout'. Every time you tap Complete Bill, your paper receipt prints instantly without manual taps."
+      }
+    ]
+  };
   const printers = [
     {
       name: "TVS RP 3150 / Star Series",
@@ -113,29 +177,44 @@ export default function HardwarePage() {
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Breadcrumb */}
-        <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider mb-6">
-          <Link href="/" className="hover:text-emerald-700">Home</Link>
-          <span>/</span>
-          <span className="text-slate-900">Hardware Compatibility</span>
-        </div>
-
-        {/* Hero Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 font-extrabold text-xs uppercase tracking-wider mb-4">
-            <Printer className="w-4 h-4 text-emerald-700" />
-            Zero Proprietary Lock-In
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <div className="bg-slate-50 min-h-screen py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider mb-6">
+            <Link href="/" className="hover:text-emerald-700">
+              Home
+            </Link>
+            <span>/</span>
+            <span className="text-slate-900">Hardware Compatibility</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Bluetooth Thermal Printers Compatible with MyShop POS
-          </h1>
-          <p className="text-base sm:text-lg text-slate-600 font-medium mt-4 leading-relaxed">
-            MyShop works with <span className="text-emerald-700 font-bold">any standard ESC/POS Bluetooth thermal printer</span> available on Amazon, Flipkart, or your local electronics market. No expensive proprietary hardware required.
-          </p>
-        </div>
+
+          {/* Hero Header */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300 font-extrabold text-xs uppercase tracking-wider mb-4">
+              <Printer className="w-4 h-4 text-emerald-700" />
+              Zero Proprietary Lock-In
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+              Bluetooth Thermal Printers Compatible with MyShop POS
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 font-medium mt-4 leading-relaxed">
+              MyShop works with{" "}
+              <span className="text-emerald-700 font-bold">
+                any standard ESC/POS Bluetooth thermal printer
+              </span>{" "}
+              available on Amazon, Flipkart, or your local electronics market. No
+              expensive proprietary hardware required.
+            </p>
+          </div>
 
         {/* Printers Comparison Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
@@ -305,6 +384,7 @@ export default function HardwarePage() {
 
       </div>
     </div>
+    </>
   );
 }
 

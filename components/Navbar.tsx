@@ -72,7 +72,10 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600">
+          <nav className="hidden md:flex items-center gap-7 text-sm font-bold text-slate-600">
+            <Link href="/kirana-billing-app" className="hover:text-emerald-700 transition-colors text-emerald-800 font-extrabold">
+              Kirana App
+            </Link>
             <Link href="/#features" className="hover:text-emerald-700 transition-colors">
               Features
             </Link>

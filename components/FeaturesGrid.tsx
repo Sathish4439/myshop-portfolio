@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Zap, ScanBarcode, Printer, Users, Package, BarChart3, CheckCircle2 } from "lucide-react";
 
 export default function FeaturesGrid() {
@@ -137,6 +138,18 @@ export default function FeaturesGrid() {
                   />
                 </div>
               </div>
+
+              {/* Link to Hardware page for Printer feature */}
+              {feat.tag === "FEATURE 03" && (
+                <div className="mt-4 pt-3 border-t border-purple-200/60">
+                  <Link
+                    href="/hardware"
+                    className="text-xs font-bold text-purple-700 hover:text-purple-900 flex items-center gap-1 justify-center"
+                  >
+                    View Compatible Printers Guide →
+                  </Link>
+                </div>
+              )}
 
             </div>
           ))}

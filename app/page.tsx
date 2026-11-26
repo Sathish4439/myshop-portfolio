@@ -59,7 +59,9 @@ export default function HomePage() {
       <FeaturesGrid />
 
       {/* 4. Cost Comparison Calculator */}
-      <CostCalculator />
+      <section id="pricing">
+        <CostCalculator />
+      </section>
 
       {/* 5. Bluetooth Printer Compatibility Spotlight */}
       <PrinterSpotlight />

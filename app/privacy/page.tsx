@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://myshop.sathishdev.in/privacy",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function PrivacyPage() {
