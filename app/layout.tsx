@@ -73,6 +73,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://myshop.sathishdev.in",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/app-logo.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/app-logo.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   verification: {
     google: "google9c6a341969d73685",
   },
