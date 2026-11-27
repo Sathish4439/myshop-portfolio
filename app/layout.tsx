@@ -19,18 +19,22 @@ export const metadata: Metadata = {
   description:
     "Free grocery billing app for kirana, maligai kadai & provision stores. 100% offline Android POS, camera barcode scanner, Bluetooth thermal receipt printing, digital khata & WhatsApp reminders. Zero subscription. Download free on Play Store.",
   keywords: [
+    "மளிகைக் கடை பில்லிங் ஆப்",
+    "maligai kadai billing app",
     "grocery billing app",
     "kirana billing app free",
     "offline billing app android",
     "kirana pos software",
     "free grocery pos app india",
+    "grocery billing app tamil",
+    "tamil nadu grocery billing app",
+    "free maligai pos software",
     "bluetooth thermal printer billing app",
     "phone camera barcode scanner pos",
     "customer credit khata app",
-    "maligai kadai billing app",
     "provision store billing app",
     "phone as a pos",
-    "myshop pos"
+    "myshop pos tamil"
   ],
   authors: [{ name: "MyShop Team", url: "https://myshop.sathishdev.in" }],
   creator: "MyShop",

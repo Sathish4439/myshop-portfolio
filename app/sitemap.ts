@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/maligai-kadai-billing-app`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
+    {
       url: `${baseUrl}/kirana-billing-app`,
       lastModified: now,
       changeFrequency: "weekly",

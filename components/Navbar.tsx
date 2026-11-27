@@ -72,9 +72,15 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-7 text-sm font-bold text-slate-600">
-            <Link href="/kirana-billing-app" className="hover:text-emerald-700 transition-colors text-emerald-800 font-extrabold flex items-center gap-1">
-              <span>மளிகை &amp; Kirana</span>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
+            <Link
+              href="/maligai-kadai-billing-app"
+              className="text-emerald-900 font-black flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100/80 border border-emerald-300 hover:bg-emerald-200 transition-all text-xs uppercase tracking-wider"
+            >
+              <span>மளிகைக் கடை ஆப் 🛒</span>
+            </Link>
+            <Link href="/kirana-billing-app" className="hover:text-emerald-700 transition-colors">
+              Kirana Store
             </Link>
             <Link href="/#features" className="hover:text-emerald-700 transition-colors">
               Features
@@ -124,12 +130,20 @@ export default function Navbar() {
           <div className="md:hidden px-4 pt-2 pb-6 bg-white border-b border-slate-200 shadow-xl space-y-4">
             <nav className="flex flex-col space-y-3 font-bold text-slate-700">
               <Link
+                href="/maligai-kadai-billing-app"
+                onClick={() => setMobileMenuOpen(false)}
+                className="px-3.5 py-2.5 rounded-xl bg-emerald-600 text-white font-black flex items-center justify-between shadow-sm"
+              >
+                <span>மளிகைக் கடை பில்லிங் ஆப் (Tamil)</span>
+                <span className="text-[10px] bg-white text-emerald-900 px-2 py-0.5 rounded-full font-black">100% இலவசம்</span>
+              </Link>
+              <Link
                 href="/kirana-billing-app"
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-3 py-2 rounded-lg bg-emerald-50 text-emerald-800 font-extrabold flex items-center justify-between"
               >
-                <span>மளிகை &amp; Kirana App</span>
-                <span className="text-[10px] bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded-full font-black">100% Free</span>
+                <span>Kirana Billing App</span>
+                <span className="text-[10px] bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded-full font-black">Free POS</span>
               </Link>
               <Link
                 href="/#features"
